@@ -6,6 +6,18 @@
  * Version: 0.1 (2015-05-13)
  *
  */
+function touchStarted() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+  }
+}
+
+// También por si acaso el usuario usa el ratón
+$(document).one('mousedown', function() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+  }
+});
 (function ($) {
     $.fn.knobby = function (options) {
         var instanceIsPressed = [];
