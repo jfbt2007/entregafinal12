@@ -1,224 +1,36 @@
-.knobby-wrap {
-  padding: 5px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-i {
-  font-size:2em;
-  font-style:normal;
-}
-
-.knobby-knob {
-  display: block;
-  position: relative;
-  width: 8em;
-  height: 8em;
-  border-radius: 100%;
-  overflow: hidden;
-  /* created with http://codeblock.at/base64-noise-generator/ */
-  background: #212121 url(data:image/png;base64,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);
-  background-size: 50% 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.knobby-shadow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border-radius: 100%;
-  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.5) inset, 0 1px 3px rgba(255, 255, 255, 0.85) inset;
-}
-
-.knobby-handle {
-  transform: rotate(0deg) translateY(-3em);
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  left: 50%;
-  top: 50%;
-  margin-top: -0.5em;
-  margin-left: -0.5em;
-  background: #525b58;
-  border-radius: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 -2px 4px rgba(255, 255, 255, 0.85) inset;
-  pointer-events: none;
-}
-
-.knobby-input {
-  margin: 4px auto;
-  text-align: right;
-  background: #222;
-  width:5em;
-  color: #eee;
-  border: 1px solid #111;
-  padding: 5px 0;
-  font-family: monospace;
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(255, 255, 255, 0.85);
-}
-
-@keyWidth: 50px;
-@keyHeight: 200px;
-@crossHeightRatio: 0.75;
-@crossWidthRatio: 0.66;
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-body {
-  -webkit-backface-visibility: hidden;
-  font: 0.9em "Roboto", sans-serif;
-  line-height: 2.0;
-  background: #333;
-  color: #aaa;
-}
-
-fieldset {
-  display: block;
-  border: 1px solid gray;
-}
-
-div.keyboard {
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-  margin: 10px auto;
-  height: 220px;
-  width:1450px;
-  
-  
-  user-select:none;
-  -webkit-user-select:none;
-}
-
-label { padding: 0 1em }
-
+/* Estilos corregidos para que las teclas se posicionen una tras otra */
 .key {
-  position: absolute;
+  position: relative; /* Cambiado de absolute a relative para flujo horizontal */
+  display: inline-block;
   background: white;
-  height: @keyHeight;
-  width: @keyWidth;
+  height: 200px;
+  width: 45px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border-radius: 0 0 5px 5px;
-  -webkit-transform-origin: top center;
-  -webkit-transform: translate(0, 0) rotateX(0);
-  -moz-transform-origin: top center;
-  -moz-transform: translate(0, 0) rotateX(0);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  transition: all .2s ease;
+  vertical-align: top;
   border: 1px solid gray;
-  z-index: 90;
-  k {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: gray;
-    font-size: 10px;
-    font-weight: bold;
-    opacity: 0.8;
-  }
-}
-
-body.hideKeyboardKeys .key k {
-  display: none;
-}
-
-.key.active {
-  background: orange!important;
-  
-  //-webkit-transform-origin:top center;
-  -webkit-transform: translate3d(0, 0, -5px) rotateX(-1deg) scale(0.95);
-  //-moz-transform-origin:top center;
-  -moz-transform: rotateX(-1deg) scale(0.95);
-  z-index: 80;
-  
-  k {
-    //color:white;
-  }
-}
-
-.key.cross.active {
-  z-index: 100;
-  -webkit-transform: rotateX(0) scale(0.95);
-  //-moz-transform-origin:top center;
-  -moz-transform: rotateX(0) scale(0.95);
+  z-index: 1;
+  margin-right: -1px; /* Para que los bordes no se dupliquen */
 }
 
 .key.cross {
-  height: @keyHeight * @crossHeightRatio;
+  position: absolute; /* Las negras sí deben ser absolutas */
+  height: 120px;
+  width: 30px;
   background: black;
-  margin-left: @keyWidth - (@keyWidth * @crossWidthRatio/2);
-  z-index: 100;
-  width: @keyWidth * @crossWidthRatio;
+  z-index: 2;
+  margin-left: -15px; /* Las centra entre dos blancas */
 }
 
-.c {
-  left: 0;
+.key.active {
+  background: orange !important;
 }
 
-.d {
-  left: @keyWidth;
-}
-
-.e {
-  left: @keyWidth*2;
-}
-
-.f {
-  left: @keyWidth*3;
-}
-
-.g {
-  left: @keyWidth*4;
-}
-
-.a {
-  left: @keyWidth*5;
-}
-
-.b {
-  left: @keyWidth*6;
-}
-
-.one {
-  margin-left: @keyWidth*7;
-}
-
-.one.cross {
-  margin-left: @keyWidth*7 + @keyWidth - (@keyWidth * @crossWidthRatio/2);
-}
-
-.two {
-  margin-left: @keyWidth*14;
-}
-
-.two.cross {
-  margin-left: @keyWidth*14 + @keyWidth - (@keyWidth * @crossWidthRatio/2);
-}
-
-.three {
-  margin-left: @keyWidth*21;
-}
-
-.three.cross {
-  margin-left: @keyWidth*21 + @keyWidth - (@keyWidth * @crossWidthRatio/2);
-}
-
-.four {
-  margin-left: @keyWidth*28;
-}
-
-.four.cross {
-  margin-left: @keyWidth*28 + @keyWidth - (@keyWidth * @crossWidthRatio/2);
+.keyboard {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+  background: #222;
 }
