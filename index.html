@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="styles/stylekeyboard.css">
+	<script src="scrpit/scrpit.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- JQUERY.KNOBBY.JS --->
+
+	<div class="keyboard">
+    <div class="key c zero"><k id="germanY">Y</k></div>
+		<div class="key c cross zero"><k>S</k></div>
+		<div class="key d zero"><k>X</k></div>
+		<div class="key d cross zero"><k>D</k></div>
+		<div class="key e zero"><k>C</k></div>
+		<div class="key f zero"><k>V</k></div>
+		<div class="key f cross zero"><k>G</k></div>
+		<div class="key g zero"><k>B</k></div>
+		<div class="key g cross zero"><k>H</k></div>
+		<div class="key a zero"><k>N</k></div>
+		<div class="key a cross zero"><k>J</k></div>
+		<div class="key b zero"><k>M</k></div>
+		<div class="key c one"><k>Q</k></div>
+    <div class="key c cross one"><k>2</k></div>
+    <div class="key d one"><k>W</k></div>
+		<div class="key d cross one"><k>3</k></div>
+		<div class="key e one"><k>E</k></div>
+    <div class="key f one"><k>R</k></div>
+		<div class="key f cross one"><k>5</k></div>
+		<div class="key g one"><k>T</k></div>
+		<div class="key g cross one"><k>6</k></div>
+		<div class="key a one"><k id="germanZ">Z</k></div>
+    <div class="key a cross one"><k>7</k></div>
+		<div class="key b one"><k>U</k></div>
+		<div class="key c two"><k>I</k></div>
+		<div class="key c cross two"><k>9</k></div>
+		<div class="key d two"><k>O</k></div>
+		<div class="key d cross two"><k>0</k></div>
+		<div class="key e two"><k>P</k></div>
+		<div class="key f two"><k>&Uuml;</k></div>
+		<div class="key f cross two"></div>
+		<div class="key g two"></div>
+		<div class="key g cross two"></div>
+		<div class="key a two"></div>
+		<div class="key a cross two"></div>
+		<div class="key b two"></div>
+		<div class="key c three"></div>
+		<div class="key c cross three"></div>
+		<div class="key d three"></div>
+		<div class="key d cross three"></div>
+		<div class="key e three"></div>
+		<div class="key f three"></div>
+		<div class="key f cross three"></div>
+		<div class="key g three"></div>
+		<div class="key g cross three"></div>
+		<div class="key a three"></div>
+		<div class="key a cross three"></div>
+		<div class="key b three"></div>
+		<div class="key c four"></div>
+		
+	</div>
+<fieldset>
+	<legend>Keyboard</legend>
+  <label>Keyboard-Layout: 
+		<select name="keyboardLayout">
+			<option value="de">German (QWERTZ)</option>
+			<option value="en">English (QWERTY)</option>
+<!--<option value="FRE">French (AZERTY)</option>-->
+	  </select>
+  </label>
+	<label>
+      <input type=checkbox name=showKeyboardKeys checked /> Show keys   
+   </label>
+	<label>
+      <input type=checkbox name=transposeUp /> Transpose 1 oct up
+    </label>
+</label>
+</fieldset>
+
+
+<fieldset>
+  <legend>Wave</legend>
+  
+  
+  
+  <label>
+    Volume:
+    
+    <input name="volume" type="number" class="knobby" min="0" max="2" value="1" step=".1" />
+  </label>
+  
+  <label>Form:</label>
+  <label><input type="radio" name="type" value="sine" > <i>∿</i></label>
+  <label><input type="radio" name="type" value="square" > <i>⊔</i></label>
+   <label><input type="radio" name="type" value="triangle" checked> <i>△</i></label>
+  <label><input type="radio" name="type" value="sawtooth" > <i> ⊿</i></label>
+  
+
+  
+</fieldset>
+
+<fieldset>
+  <legend>Env</legend>
+  <label>Attack:
+    <input type="number" name="attack" class="knobby" min="0" max="2" step=".01" value=".2">
+  </label>
+  
+  <label>Decay:
+    <input type="number" name="decay" class="knobby" min="0" max="2" step=".01" value=".1">
+  </label>
+  
+  <label>Sustain:
+    <input type="number" name="sustain" class="knobby" min="0" max="2" step=".01" value=".5">
+  </label>
+   <label>Release:
+    <input type="number" name="release" class="knobby" min="0" max="2" step=".01" value=".5">
+  </label>
+</fieldset> 
+</body>
+</html>
