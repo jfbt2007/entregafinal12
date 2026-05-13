@@ -1,3 +1,4 @@
+/* Reset y tipografía */
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +6,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Fondo principal */
 body {
-    background-color: #050505;
-    color: white;
     min-height: 100vh;
+    background-image: url("../assets/Exterior.gif");
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed;   
+    color: white;
+                        
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -30,27 +38,25 @@ header p {
     color: #d9d9d9;
 }
 
+/* Contenedor de tarjetas */
 .menu-container {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
+/* Tarjetas */
 .card {
     background-color: #0f1724;
     border: 2px solid #1b4d8a;
     border-radius: 20px;
     padding: 30px;
-
     text-decoration: none;
     color: white;
-
     transition: 0.3s ease;
-
     box-shadow: 0 0 15px rgba(0, 102, 255, 0.2);
 }
 
@@ -71,11 +77,13 @@ header p {
     line-height: 1.5;
 }
 
+/* Tarjeta especial Synth */
 .synth-card {
     background: linear-gradient(135deg, #10294d, #1b4d8a);
     border: 2px solid #ffd000;
 }
 
+/* Contenido de páginas internas */
 .page-content {
     width: 85%;
     max-width: 1000px;
@@ -98,18 +106,16 @@ header p {
     color: #e0e0e0;
 }
 
+/* Botón de regreso */
 .back-button {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 20px;
-
     background-color: #ffd000;
     color: black;
-
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-
     transition: 0.3s ease;
 }
 
