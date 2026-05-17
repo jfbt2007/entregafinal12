@@ -1,5 +1,5 @@
 /* =========================
-STYLE2.CSS
+CSS6.CSS
 ========================= */
 
 *{
@@ -13,7 +13,7 @@ font-family:'Inter', sans-serif;
 
 overflow-x:hidden;
 
-background-image:url("../assets/element.gif");
+background-image:url("../assets/inf.gif");
 
 background-size:cover;
 
@@ -212,6 +212,44 @@ font-size:1rem;
 }
 
 /* =========================
+IMAGE SECTION
+========================= */
+
+.image-section{
+background:white;
+
+padding:35px;
+
+margin-bottom:40px;
+
+border-radius:24px;
+
+border:1px solid rgba(0,0,0,0.06);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.04);
+
+text-align:center;
+}
+
+.image-section h2{
+font-family:'Space Grotesk', sans-serif;
+
+font-size:2rem;
+
+margin-bottom:25px;
+
+color:#2563eb;
+}
+
+.image-section img{
+width:100%;
+
+border-radius:20px;
+
+object-fit:cover;
+}
+
+/* =========================
 VIDEO SECTION
 ========================= */
 
@@ -267,44 +305,6 @@ font-weight:500;
 max-width:900px;
 
 margin:auto;
-}
-
-/* =========================
-SOURCES
-========================= */
-
-.sources{
-margin-top:80px;
-
-padding:40px;
-
-background:white;
-
-border-radius:24px;
-
-border:1px solid rgba(0,0,0,0.06);
-
-box-shadow:0 10px 30px rgba(0,0,0,0.04);
-}
-
-.sources h3{
-font-family:'Space Grotesk', sans-serif;
-
-color:#2563eb;
-
-margin-bottom:20px;
-
-font-size:1.5rem;
-}
-
-.sources ul{
-padding-left:20px;
-}
-
-.sources li{
-margin-bottom:12px;
-
-color:#4b5563;
 }
 
 /* =========================

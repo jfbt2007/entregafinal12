@@ -6,7 +6,7 @@ body {
     background: #333;
     color: #aaa;
      min-height: 100vh;
-    background-image: url("../assets/disk.gif");
+    background-image: url("../assets/200.webp");
     background-size: cover;          /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center;     /* Centra la imagen */
     background-repeat: no-repeat;    /* Evita que se repita */
